@@ -224,10 +224,3 @@ HTTP status codes used: `200`, `201`, `400`, `401`, `403`, `404`
 
 ---
 
-## Security Notes
-
-- Passwords are hashed using Django's PBKDF2 algorithm
-- JWT access tokens expire in **24 hours**; refresh tokens in **7 days**
-- Patients can only be viewed/edited/deleted by their creator
-- Doctors can be viewed by all authenticated users, but edited/deleted only by their creator
-- Never commit `.env` to version control
